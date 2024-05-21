@@ -1,6 +1,6 @@
-## What are the different types of sorting algorithm:
+# What are the different types of sorting algorithm:
 
-# Sorting algorithms are methods used to order the elements of a list in a specific sequence (most commonly in ascending or descending order). They are fundamental in computer science for optimizing data handling and improving efficiency. Here are some of the most commonly used types of sorting algorithms:
+## Sorting algorithms are methods used to order the elements of a list in a specific sequence (most commonly in ascending or descending order). They are fundamental in computer science for optimizing data handling and improving efficiency. Here are some of the most commonly used types of sorting algorithms:
 
 *Bubble Sort*: A simple comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This process is repeated until no swaps are needed, which means the list is sorted. It is known for its simplicity but is inefficient for large datasets.
 *Selection Sort*: This algorithm segments the list into two parts: sorted and unsorted. It repeatedly removes the smallest element of the unsorted segment and appends it to the sorted segment. Like Bubble Sort, it is quite inefficient for large datasets.
@@ -25,8 +25,8 @@ Here's a comparison of the sorting algorithms mentioned in a tabular format:
 | Radix Sort | O(nk) | O(nk) | O(nk) | O(n+k) | Yes | No |
 
 Key:
-n: Number of elements in the array
-k: The range of the input
-Stable: Sorting algorithm is stable if it preserves the relative order of equal elements
-In-place: Sorting algorithm is in-place if it uses a constant amount of extra space
+> n: Number of elements in the array
+> k: The range of the input
+> Stable: Sorting algorithm is stable if it preserves the relative order of equal elements
+> In-place: Sorting algorithm is in-place if it uses a constant amount of extra space
 This table provides a quick overview of the performance characteristics and properties of each sorting algorithm, helping you choose the right one based on your specific requirements.
