@@ -79,7 +79,7 @@ Bucket Sort distributes the elements of an array into a number of buckets. Each 
 
 ### Running the program
 
-You can run the program on Replit by clicking the following link: [Run on Replit]([replit_link_here](https://replit.com/@SabirMallick/JProject)  
+You can run the program on Replit by clicking the following link: [Run on Replit](https://replit.com/@SabirMallick/JProject)  
 
 ### Files
 
