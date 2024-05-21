@@ -68,10 +68,10 @@ Bucket Sort distributes the elements of an array into a number of buckets. Each 
 | Radix Sort    | O(nk)                  | O(nk)                     | O(nk)                   | O(n+k)           | Yes    | No       |
 
 **Key**:
-> **n**: Number of elements in the array
-> **k**: The range of the input
-> **Stable**: A sorting algorithm is stable if it preserves the relative order of equal elements
-> **In-place**: A sorting algorithm is in-place if it uses a constant amount of extra space
+> - **n**: Number of elements in the array
+> - **k**: The range of the input
+> - **Stable**: A sorting algorithm is stable if it preserves the relative order of equal elements
+> - **In-place**: A sorting algorithm is in-place if it uses a constant amount of extra space
 
 ## License
 
