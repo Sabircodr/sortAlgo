@@ -83,12 +83,12 @@ You can run the program on Replit by clicking the following link: [Run on Replit
 
 ### Files
 
-- [basic_sort.h](basic_sort.h): Header file containing implementations of basic sorting algorithms such as insertion sort, selection sort, and bubble sort.
-- [heap_sort.h](heap_sort.h): Header file containing the implementation of the heap sort algorithm.
-- [merge_sort.h](merge_sort.h): Header file containing the implementation of the merge sort algorithm.
-- [quick_sort.h](quick_sort.h): Header file containing the implementation of the quick sort algorithm.
-- [radix_sort.h](radix_sort.h): Header file containing the implementation of the radix sort algorithm.
-- [extras.h](extras.h): Header file containing any extra functions that may be needed.
+- [basic_sort.h](sort/basic_sort.h): Header file containing implementations of basic sorting algorithms such as insertion sort, selection sort, and bubble sort.
+- [heap_sort.h](sort/heap_sort.h): Header file containing the implementation of the heap sort algorithm.
+- [merge_sort.h](sort/merge_sort.h): Header file containing the implementation of the merge sort algorithm.
+- [quick_sort.h](sort/quick_sort.h): Header file containing the implementation of the quick sort algorithm.
+- [radix_sort.h](sort/radix_sort.h): Header file containing the implementation of the radix sort algorithm.
+- [extras.h](sort/extras.h): Header file containing any extra functions that may be needed.
 - [MAIN.c](MAIN.c): Main program file that includes all the header files and runs the sorting algorithms.
 
 
