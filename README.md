@@ -15,6 +15,9 @@ This repository contains implementations of various sorting algorithms in C. The
   - [Radix Sort](#radix-sort)
   - [Bucket Sort](#bucket-sort)
 - [Actual Program](#actual-program)
+  - [Running the Program](#running-the-program)
+  - [Files](#files)
+  - [Repository Link](#repository-link)
 - [Comparison Table](#comparison-table)
 - [License](#license)
 
@@ -90,6 +93,10 @@ You can run the program on Replit by clicking the following link: [Run on Replit
 - [radix_sort.h](sort/radix_sort.h): Header file containing the implementation of the radix sort algorithm.
 - [extras.h](sort/extras.h): Header file containing any extra functions that may be needed.
 - [MAIN.c](MAIN.c): Main program file that includes all the header files and runs the sorting algorithms.
+
+### Repository Link
+
+You can view the entire repository on GitHub by clicking [here](https://github.com/Sabircodr/sortAlgo).
 
 
 ## License
