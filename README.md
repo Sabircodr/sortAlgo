@@ -14,11 +14,11 @@ This repository contains implementations of various sorting algorithms in C. The
   - [Heap Sort](#heap-sort)
   - [Radix Sort](#radix-sort)
   - [Bucket Sort](#bucket-sort)
+- [Comparison Table](#comparison-table)
 - [Actual Program](#actual-program)
   - [Running the Program](#running-the-program)
   - [Files](#files)
   - [Repository Link](#repository-link)
-- [Comparison Table](#comparison-table)
 - [License](#license)
 
 ## Introduction
