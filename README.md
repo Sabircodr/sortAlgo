@@ -9,8 +9,8 @@
 * ***Quick Sort***: Another divide and conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot. There are many different versions of quicksort that pick pivot in different ways. It has better space complexity than merge sort and is often faster in practice.  
 + ***Heap Sort***: Based on a binary heap data structure. It creates a max heap from the array and then repeatedly extracts the maximum element from the heap, and replaces it with the last element of the heap followed by re-adjusting the heap. It is very efficient and does not require additional array storage.  
 - ***Radix Sort***: Implements a digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort.  
-* ***Bucket Sort***: Distributes the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sort algorithm.  
-.
+* ***Bucket Sort***: Distributes the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sort algorithm.
+
 Each of these algorithms has its own pros and cons, and the choice of sorting algorithm can depend on the size and nature of the data, as well as specific performance requirements.
 
 ## Here's a comparison of the sorting algorithms mentioned in a tabular format:
