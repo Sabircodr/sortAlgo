@@ -73,6 +73,9 @@ Bucket Sort distributes the elements of an array into a number of buckets. Each 
 > - **Stable**: A sorting algorithm is stable if it preserves the relative order of equal elements
 > - **In-place**: A sorting algorithm is in-place if it uses a constant amount of extra space
 
+## Actual Program
+[MAIN](MAIN.c)
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
