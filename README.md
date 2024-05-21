@@ -25,8 +25,11 @@ Here's a comparison of the sorting algorithms mentioned in a tabular format:
 | Radix Sort | O(nk) | O(nk) | O(nk) | O(n+k) | Yes | No |
 
 Key:
-> n: Number of elements in the array\n
-> k: The range of the input\n
+> n: Number of elements in the array
+
+> k: The range of the input
+
 > Stable: Sorting algorithm is stable if it preserves the relative order of equal elements
+
 > In-place: Sorting algorithm is in-place if it uses a constant amount of extra space
 This table provides a quick overview of the performance characteristics and properties of each sorting algorithm, helping you choose the right one based on your specific requirements.
