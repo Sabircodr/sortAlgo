@@ -32,4 +32,5 @@ Key:
 > Stable: Sorting algorithm is stable if it preserves the relative order of equal elements
 
 > In-place: Sorting algorithm is in-place if it uses a constant amount of extra space
+
 This table provides a quick overview of the performance characteristics and properties of each sorting algorithm, helping you choose the right one based on your specific requirements.
