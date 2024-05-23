@@ -105,7 +105,7 @@ Below is the dataset representing the average runtime of ```Insertion Sort``` fo
 
 
 #### Graph:
-The graph below illustrates the runtime of ```Bubble Sort``` against dataset sizes:
+The graph below illustrates the runtime of ```Insertion Sort``` against dataset sizes:
 ![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/d9f11d06-03f5-47e9-badf-f6ad960d5d31)
 
 #### Analysis
