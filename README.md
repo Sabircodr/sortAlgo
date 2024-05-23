@@ -17,9 +17,9 @@ This repository contains implementations of various sorting algorithms in C. The
 - [Comparison Table](#comparison-table)
 - [Actual Program](#actual-program)
   - [Repository Link](#repository-link)
+  - [Performance Graph](#performance-graph)
   - [Files](#files)
   - [Output](#output)
-  - [Performance Graph](#performance-graph)
 - [License](#license)
 
 ## Introduction
@@ -87,6 +87,17 @@ You can view the entire repository on GitHub by clicking [here](https://github.c
 >[!TIP] 
 >You can run the program on Replit by clicking this link: [Run on Replit](https://replit.com/@SabirMallick/JProject)  
 
+
+### Performance Graph
+
+The following graph illustrates the time taken by each sorting algorithm to sort a dataset. This visual representation helps in comparing the performance and efficiency of the different sorting algorithms implemented in this project.
+
+![Graph showing the performance comparison of different sorting algorithms in terms of time taken to sort a dataset.](Graphs/Graph1.png)
+In this graph, you can see how each algorithm performs with respect to time complexity when sorting the dataset. The x-axis represents the sorting algorithms, while the y-axis represents the time taken to sort the dataset.
+> [!IMPORTANT]
+> We can see that only Bubble Sort, Selection Sort, and Insertion Sort have visible lines, while the rest are along the zero-second line. This is because the rest of the algorithms are much faster compared to these three. I have done a detailed analysis of the graph of these sorting algorithms and their time complexity. Click ___this link___ to see.
+
+
 ### Files
 
 - [basic_sort.h](sort/basic_sort.h): Header file containing implementations of basic sorting algorithms such as insertion sort, selection sort, and bubble sort.
@@ -99,6 +110,7 @@ You can view the entire repository on GitHub by clicking [here](https://github.c
 
 
 In the diagram below, you can see the dependencies between the main program file (`MAIN.c`) and various header files containing implementations of different sorting algorithms. Each header file corresponds to a specific sorting algorithm and is included in the main program file to utilize its functions.
+
 
 ```mermaid
 graph TD;
@@ -140,13 +152,7 @@ Size        Bubble      Select      Insert      Merge       Quick       Heap    
 > [!NOTE]
 > There is a ```print(int arr[], int size)``` function, to print the contents of the array whenever the user wants.
 
-### Performance Graph
 
-The following graph illustrates the time taken by each sorting algorithm to sort a dataset. This visual representation helps in comparing the performance and efficiency of the different sorting algorithms implemented in this project.
-![Graph showing the performance comparison of different sorting algorithms in terms of time taken to sort a dataset.](Graphs/Graph1.png)
-In this graph, you can see how each algorithm performs with respect to time complexity when sorting the dataset. The x-axis represents the sorting algorithms, while the y-axis represents the time taken to sort the dataset.
-> [!IMPORTANT]
-> We can see that only Bubble Sort, Selection Sort, and Insertion Sort have visible lines, while the rest are along the zero-second line. This is because the rest of the algorithms are much faster compared to these three. I have done a detailed analysis of the graph of these sorting algorithms and their time complexity. Click ___this link___ to see.
 
 ## License
 
