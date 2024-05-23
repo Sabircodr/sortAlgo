@@ -44,7 +44,7 @@ Below is the dataset representing the average runtime of ```Bubble Sort``` for d
 
 #### Graph:
 The graph below illustrates the runtime of ```Bubble Sort``` against dataset sizes:
-![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/efa70069-bd05-4fb4-b751-4c0b711d944f)
+![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/a51b79e8-51da-4c2a-a721-66a1681c4aae)
 
 #### Analysis
 ##### Runtime Growth:
