@@ -17,8 +17,8 @@ This repository contains implementations of various sorting algorithms in C. The
 - [Comparison Table](#comparison-table)
 - [Actual Program](#actual-program)
   - [Repository Link](#repository-link)
-  - [Running the Program](#running-the-program)
   - [Files](#files)
+  - [Output](#output)
 - [License](#license)
 
 ## Introduction
@@ -71,8 +71,7 @@ Bucket Sort distributes the elements of an array into a number of buckets. Each 
 | Heap Sort     | O(n log n)             | O(n log n)                | O(n log n)              | O(1)             | No     | Yes      |
 | Radix Sort    | O(nk)                  | O(nk)                     | O(nk)                   | O(n+k)           | Yes    | No       |
 
-**Key**:
->[!NOTE] Key
+>**Key**:
 > - **n**: Number of elements in the array
 > - **k**: The range of the input
 > - **Stable**: A sorting algorithm is stable if it preserves the relative order of equal elements
@@ -94,8 +93,23 @@ You can view the entire repository on GitHub by clicking [here](https://github.c
 - [merge_sort.h](sort/merge_sort.h): Header file containing the implementation of the merge sort algorithm.
 - [quick_sort.h](sort/quick_sort.h): Header file containing the implementation of the quick sort algorithm.
 - [radix_sort.h](sort/radix_sort.h): Header file containing the implementation of the radix sort algorithm.
-- [extras.h](sort/extras.h): Header file containing any extra functions that may be needed.
+- [extras.h](sort/extras.h): Header file containing any extra functions that may be needed like ```print(arr[],n)```, ```swap(a,b)```, etc.
 - [MAIN.c](MAIN.c): Main program file that includes all the header files and runs the sorting algorithms.
+
+
+In the diagram below, you can see the dependencies between the main program file (`MAIN.c`) and various header files containing implementations of different sorting algorithms. Each header file corresponds to a specific sorting algorithm and is included in the main program file to utilize its functions.
+
+```mermaid
+graph TD;
+    extras.h-->sort;
+    basic_sort.h-->sort;
+    heap_sort.h-->sort;
+    merge_sort.h-->sort;
+    quick_sort.h-->sort;
+    radix_sort.h-->sort;
+    sort-->MAIN.c;
+```
+
 
 ### Output
 
