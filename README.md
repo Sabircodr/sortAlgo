@@ -19,6 +19,7 @@ This repository contains implementations of various sorting algorithms in C. The
   - [Repository Link](#repository-link)
   - [Files](#files)
   - [Output](#output)
+  - [Performance Graph](#performance-graph)
 - [License](#license)
 
 ## Introduction
@@ -138,6 +139,14 @@ Size        Bubble      Select      Insert      Merge       Quick       Heap    
 ```
 > [!NOTE]
 > There is a ```print(int arr[], int size)``` function, to print the contents of the array whenever the user wants.
+
+### Performance Graph
+
+The following graph illustrates the time taken by each sorting algorithm to sort a dataset. This visual representation helps in comparing the performance and efficiency of the different sorting algorithms implemented in this project.
+![Graph showing the performance comparison of different sorting algorithms in terms of time taken to sort a dataset.](Graphs/Graph1.png)
+In this graph, you can see how each algorithm performs with respect to time complexity when sorting the dataset. The x-axis represents the sorting algorithms, while the y-axis represents the time taken to sort the dataset.
+> [!IMPORTANT]
+> We can see that only Bubble Sort, Selection Sort, and Insertion Sort have visible lines, while the rest are along the zero-second line. This is because the rest of the algorithms are much faster compared to these three. I have done a detailed analysis of the graphs and their time complexity. Click ___this link___ to see.
 
 ## License
 
