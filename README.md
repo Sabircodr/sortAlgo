@@ -85,7 +85,9 @@ Bucket Sort distributes the elements of an array into a number of buckets. Each 
 
 You can view the entire repository on GitHub by clicking [here](https://github.com/Sabircodr/sortAlgo).
 >[!TIP] 
->You can run the program on Replit by clicking this link: [Run on Replit](https://replit.com/@SabirMallick/JProject)  
+> You can run the program on Replit by clicking this link: [Run on Replit](https://replit.com/@SabirMallick/JProject).  
+>  
+>Check out the excel file too. [Link to Excel File with Detailed Analysis](https://docs.google.com/spreadsheets/d/1t3KObkQQlr6f1DnDHwoI3Hitw50DRF-b/edit?usp=sharing&ouid=100256784184872706115&rtpof=true&sd=true).
 
 
 ### Performance Graph
