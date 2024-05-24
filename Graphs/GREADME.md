@@ -80,12 +80,11 @@ The graph below illustrates the runtime of ```Insertion Sort``` against dataset 
 - For small datasets or nearly sorted data, ```Insertion Sort``` might be preferable due to its simplicity and potential efficiency. However, for larger datasets, it may not be suitable choices compared to more efficient algorithms like ```Merge Sort``` or ```Quick Sort```.
 
 ### Overall Comparision
-
-The combined graph provides a visual comparison of the performance of Bubble Sort, Selection Sort, and Insertion Sort across different dataset sizes. Each algorithm's runtime is plotted against the size of the dataset, allowing for a clear understanding of their efficiency.
+The combined graph provides a visual comparison of the performance of ```Bubble Sort```, ```Selection Sort```, and ```Insertion Sort``` across different dataset sizes. Each algorithm's runtime is plotted against the size of the dataset, allowing for a clear understanding of their efficiency.
 
 ![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/a884c3c3-824a-4919-8142-82278512731d)
 
-One notable observation from the graph is the steep curve of Bubble Sort compared to the other two algorithms. This steepness might lead to confusion regarding whether Bubble Sort truly follows a quadratic  runtime complexity. 
+One notable observation from the graph is the steep curve of ```Bubble Sort``` compared to the other two algorithms. This steepness might lead to confusion regarding whether Bubble Sort truly follows a _quadratic_  runtime complexity. 
 
 > [!IMPORTANT]
 > However, it's important to remember that the time complexity of an algorithm is not directly equal to the actual time required to execute it, but rather an algebraic representation of the number of times a statement executes. Therefore, while the graph may appear to have different scaling, the underlying algorithmic complexity remains consistent.
@@ -93,6 +92,17 @@ One notable observation from the graph is the steep curve of Bubble Sort compare
 > [!NOTE]
 > Scaling down the $O(n^2)$ curve and adjusting by factors like 2, 3, or 4 aligns it with Bubble Sort, Selection Sort, and Insertion Sort, respectively.  
 > Remember, Big O notation omits constants, focusing on the dominant factor influencing algorithm efficiency.
+
+#### Efficiency Ranking:
+* __Insertion Sort__: Emerges as the most efficient option, consistently demonstrating the lowest runtimes across all dataset sizes.
+* __Selection Sort__: Shows improved performance compared to Bubble Sort but still lags behind Insertion Sort, especially for larger datasets.
+* __Bubble Sort__: Demonstrates the highest runtime among the three algorithms, indicating its inefficiency for sorting large datasets.
+
+#### Algorithm Selection:
+The choice of sorting algorithm significantly impacts the efficiency and performance of sorting operations.
+* For very small datasets or in educational contexts where demonstrating basic sorting algorithms is the primary goal, Bubble Sort and Selection Sort can still serve a purpose.
+* Insertion Sort's optimal efficiency makes it a suitable choice for various real-world scenarios where sorting large datasets efficiently is crucial.
+* Insertion Sort is the preferred choice for practical applications, particularly when dealing with larger datasets, as it consistently outperforms the other algorithms in terms of efficiency.
 
 
 ## Efficient Sorting Algorithms
