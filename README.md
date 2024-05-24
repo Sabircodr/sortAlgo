@@ -113,17 +113,7 @@ In this graph, you can see how each algorithm performs with respect to time comp
 
 In the diagram below, you can see the dependencies between the main program file (`MAIN.c`) and various header files containing implementations of different sorting algorithms. Each header file corresponds to a specific sorting algorithm and is included in the main program file to utilize its functions.
 
-
-```mermaid
-graph TD;
-    extras.h-->sort;
-    basic_sort.h-->sort;
-    heap_sort.h-->sort;
-    merge_sort.h-->sort;
-    quick_sort.h-->sort;
-    radix_sort.h-->sort;
-    sort-->MAIN.c;
-```
+![Sorting System Design](https://github.com/Sabircodr/sortAlgo/assets/121866176/287dabb6-dcc9-4ed6-9456-4601c58518df)
 
 
 ### Output
