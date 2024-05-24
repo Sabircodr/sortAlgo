@@ -226,18 +226,18 @@ The graph illustrates the runtime performance of _Merge Sort_, _Heap Sort_, _Qui
 - ```Radix Sort``` is ideal for sorting large datasets of integers with known value ranges, especially when comparison operations are costly.
 
 
-### Combined Graph Analysis
+## Combined Graph Analysis
 
-#### Overview
+### Overview
 
 The combined graph presents a holistic view of the runtime performance of all sorting algorithms across different dataset sizes. By integrating the results of Simple Sorting Algorithms and Efficient Sorting Algorithms, we can discern overarching trends and draw insightful comparisons.
 
-#### The Complete Comparision Graph
+### The Complete Comparision Graph
 This is the combined graph illustrating the runtime performance of each sorting algorithm across various dataset sizes.
 
 ![Graph showing the combined performance comparison of different sorting algorithms in terms of time taken to sort a dataset](Complete_Graph.png)
 
-#### Observations
+### Observations
 
 1. **Performance Trends:**
    - **Bubble Sort, Selection Sort, and Insertion Sort:** These Simple Sorting Algorithms exhibit steadily increasing runtimes as dataset size grows, following their $O(n^2)$ time complexities.
@@ -252,7 +252,7 @@ This is the combined graph illustrating the runtime performance of each sorting 
 4. **Parallel Appearance of Efficient Algorithms:**
    - An interesting observation from the combined graph is that Merge Sort, Quick Sort, Heap Sort, and Radix Sort appear to parallelly follow the zero line, indicating their runtime are _significantly faster_ performance compared to Simple Sorting Algorithms. This phenomenon can be attributed to the $O(n log n)$ and $O(nk)$ time complexities of these algorithms, which result in more efficient and scalable runtime behaviors, especially for larger datasets.
 
-#### Practical Implications
+### Practical Implications
 
 The combined graph analysis has several practical implications for algorithm selection and optimization in real-world scenarios:
 - Developers can leverage the insights gained from this analysis to make informed decisions regarding algorithm selection based on performance requirements and dataset characteristics.
