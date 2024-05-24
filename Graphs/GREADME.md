@@ -108,23 +108,154 @@ The choice of sorting algorithm significantly impacts the efficiency and perform
 ## Efficient Sorting Algorithms
 Efficient sorting algorithms, such as Merge Sort, Quick Sort, Heap Sort, and Radix Sort, offer superior performance compared to simpler algorithms like Bubble Sort, Insertion Sort, and Selection Sort. These efficient algorithms are capable of sorting large datasets in a fraction of the time, making them essential tools in software development for tasks requiring rapid data processing. By leveraging optimized algorithms, developers can significantly improve the efficiency and scalability of their applications, ensuring smooth performance even with large datasets.
 
+### Merge Sort
+__Merge Sort__ demonstrates a linearithmic growth in runtime, consistent with its $O(nlogn)$ complexity. The average runtime increases moderately as the dataset size increases.This moderate increase in runtime with larger datasets highlights ```Merge Sort```'s efficiency, especially when compared to simpler algorithms like ```Bubble Sort```, ```Insertion Sort```, and ```Selection Sort```.
+
+#### Table
+Below is the dataset representing the average runtime of ```Merge Sort``` for different dataset sizes, calculated from 10 trials:
+![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/dc5d958c-d4ff-4af1-bc81-1ec0f925c719)
+
+#### Graph:
+The graph below illustrates the runtime of ```Merge Sort``` against dataset sizes:
+![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/e020f6f4-a82a-4732-906d-bfba27fe88eb)
+
+#### Analysis
+##### Runtime Growth:
+The data shows a consistent and predictable increase in runtime as the number of elements grows:
+- For smaller datasets, such as 15,000 elements, the average runtime is about 0.0017 seconds.
+- As the dataset size increases to 100,000 elements, the average runtime increases to about 0.0115 seconds.
+
+##### Considerations:
+- ```Merge Sort``` is efficient for large datasets due to its $O(nlogn)$ time complexity. It performs well across different dataset sizes, with a manageable increase in runtime.
+- As a stable sorting algorithm, ```Merge Sort``` preserves the relative order of equal elements, which can be beneficial in scenarios where this stability is required.
+- ```Merge Sort``` requires additional memory space proportional to the size of the input array because of the merging process. This can be a limitation in memory-constrained environments.
+
+
+### Quick Sort
+__Quick Sort__ generally performs very well with an average $O(nlogn)$ complexity, making it efficient for sorting large datasets. However, it has a worst-case scenario of $O(n^2)$, which occurs when the pivot selection leads to unbalanced partitions. This can significantly degrade performance, especially for datasets with a specific structure that triggers the worst-case behavior.
+
+#### Table
+Below is the dataset representing the average runtime of ```Quick Sort``` for different dataset sizes, calculated from 10 trials:
+![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/8fb0aabf-a952-468f-a6f3-f939ad8de02f)
+
+#### Graph:
+The graph below illustrates the runtime of ```Quick Sort``` against dataset sizes:
+![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/0c221fdc-bc72-44e3-adc4-012e07e1881a)
+
+#### Analysis
+##### Runtime Growth:
+- As the dataset size increases, the average runtime for ```Quick Sort``` also increases.
+- For example, for a dataset size of 15,000 elements, the average runtime ranges from approximately 0.0009 seconds to 0.0012 seconds.
+- However, as the dataset size grows to 100,000 elements, the average runtime increases to approximately 0.01 seconds.
+
+##### Considerations:
+- While ```Quick Sort``` generally performs efficiently for large datasets, it's essential to consider its worst-case scenario of $O(n^2)$
+- Careful pivot selection strategies and implementation optimizations can help mitigate the risk of encountering worst-case performance and ensure consistent efficiency across various datasets.
+
+
+### Heap Sort
+__Heap Sort__ is a comparison-based sorting algorithm that is part of the selection sort family. It works by creating a binary heap from the elements to be sorted and then repeatedly removing the largest (or smallest) element from the heap and placing it at the end of the sorted array. It has an average and worst-case time complexity of $O(nlogn)$, making it efficient for sorting large datasets.
+
+#### Table
+Below is the dataset representing the average runtime of ```Heap Sort``` for different dataset sizes, calculated from 10 trials:
+![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/a30877d1-e665-424c-8eea-3daa9b7b5fc8)
+
+#### Graph:
+The graph below illustrates the runtime of ```Heap Sort``` against dataset sizes:
+![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/4237d317-c680-4481-b6aa-8d883cf156ee)
+
+#### Analysis
+##### Runtime Growth:
+- ```Heap Sort``` demonstrates a consistent growth in runtime as the dataset size increases. However, this growth is not strictly linear due to variations in the data.
+- The average time complexity of ```Heap Sort``` is $O(nlogn)$, which suggests that the runtime should grow logarithmically with the dataset size. This trend is generally observed in the provided data.
+
+#### Consideration
+- ```Heap Sort``` is often used in scenarios where a stable sort is not required and the focus is on optimizing time complexity.
+- While ```Heap Sort``` has a theoretical time complexity of $O(nlogn)$, its constant factors may make it slightly slower in practice compared to other $O(nlogn)$ sorting algorithms like ```Merge Sort``` and ```Quick Sort```.
+- However, ```Heap Sort```'s in-place sorting nature makes it suitable for scenarios where memory usage needs to be optimized, as it requires only a constant amount of additional space.
+
+### Radix Sort
+__Radix Sort__ is a non-comparative sorting algorithm that sorts integers by processing individual digits. It works by first grouping the elements by their individual digits, then sorting the elements by each significant digit. ```Radix Sort``` has a linear time complexity $O(nk)$, where $n$ is the number of elements and $k$ is the number of digits in the largest number.
+
+#### Table
+Below is the dataset representing the average runtime of ```Radix Sort``` for different dataset sizes, calculated from 10 trials:
+![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/15e760ab-c005-49a1-b2b2-465205132476)
+
+#### Graph:
+The graph below illustrates the runtime of ```Radix Sort``` against dataset sizes:
+![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/17632086-9845-48b2-b89a-3e600e3ed009)
+
+#### Analysis
+##### Runtime Growth:
+- The average runtime of ```Radix Sort``` tends to increase slightly with the size of the dataset.
+- The growth rate is relatively stable compared to some other sorting algorithms, indicating consistent efficiency as dataset size increases.
+
+##### Consideration:
+- ```Radix Sort```'s linear time complexity makes it suitable for sorting large datasets, especially when the range of values is known and relatively small.
+- It requires additional space proportional to the size of the input.
+- ```Radix Sort``` may not be as efficient for datasets with a wide range of values or when the number of digits in the largest number is significantly larger than the average.
 
 
 
+### Overall Comparision
+
+In this comparison, we analyze four efficient sorting algorithms: **Merge Sort**, **Quick Sort**, **Heap Sort**, and **Radix Sort**. Each algorithm offers unique advantages and considerations, making them suitable for different scenarios. By examining their efficiency, stability, memory usage, and use cases, we can determine the optimal sorting algorithm for specific sorting tasks.
+
+#### Graph
+The combined graph provides a visual comparison of the performance of ```Merge Sort```, ```Heap Sort```, ```Quick Sort```, and ```Radix Sort``` across different dataset sizes. Each algorithm's runtime is plotted against the size of the dataset, allowing for a clear understanding of their efficiency.
+![image](https://github.com/Sabircodr/sortAlgo/assets/121866176/3a1f5cf9-0488-4c7c-bfcc-2428a1470999)
 
 
+#### Comparison with Graph Data:
+
+The graph illustrates the runtime performance of _Merge Sort_, _Heap Sort_, _Quick Sort_, and _Radix Sort_ across different dataset sizes. ```Radix Sort``` consistently outperforms others, showing the lowest runtimes. ```Merge Sort``` and ```Quick Sort``` follow closely with slightly higher runtimes but stable growth. ```Heap Sort``` exhibits a noticeable increase, especially for larger datasets.
+
+**Radix Sort's Efficiency:**
+> Sorting by individual digits enables ```Radix Sort```'s linear time complexity, leading to consistently low runtimes across datasets.
+
+**Competitive Performance of Merge Sort and Quick Sort:**
+> Despite slightly higher runtimes, ```Merge Sort``` and ```Quick Sort``` maintain stable performance due to their divide-and-conquer approach.
+
+**Observations on Heap Sort:**
+> ```Heap Sort```'s runtime increase, particularly for larger datasets, is due to its overhead in maintaining a ```heap``` data structure.
+
+#### Use Cases:
+
+- ```Merge Sort``` and ```Quick Sort``` are suitable for general-purpose sorting tasks and are commonly used in libraries and frameworks.
+- ```Heap Sort``` is preferred when limited memory is available, and stability is not a concern.
+- ```Radix Sort``` is ideal for sorting large datasets of integers with known value ranges, especially when comparison operations are costly.
 
 
+### Combined Graph Analysis
 
+#### Overview
 
+The combined graph presents a holistic view of the runtime performance of all sorting algorithms across different dataset sizes. By integrating the results of Simple Sorting Algorithms and Efficient Sorting Algorithms, we can discern overarching trends and draw insightful comparisons.
 
+#### The Complete Comparision Graph
+This is the combined graph illustrating the runtime performance of each sorting algorithm across various dataset sizes.
+[!img](Complete_Graph.png)
 
+#### Observations
 
+1. **Performance Trends:**
+   - **Bubble Sort, Selection Sort, and Insertion Sort:** These Simple Sorting Algorithms exhibit steadily increasing runtimes as dataset size grows, following their $O(n^2)$ time complexities.
+   - **Merge Sort, Quick Sort, Heap Sort, and Radix Sort:** In contrast, Efficient Sorting Algorithms demonstrate significantly lower runtimes, with Merge Sort being the most efficient, followed by Quick Sort, Heap Sort, and Radix Sort. These algorithms maintain relatively stable runtimes across different dataset sizes, aligning closely with their respective time complexities $O(n log n)$ and $O(nk)$.
 
+2. **Performance Gap:**
+   - The combined graph underscores the substantial performance gap between ```Simple Sorting Algorithms``` and ```Efficient Sorting Algorithms```. Simple Sorting Algorithms consistently exhibit higher runtimes, especially for larger datasets, while Efficient Sorting Algorithms offer more efficient and scalable performance.
 
+3. **Consistency and Reliability:**
+   - Merge Sort, Quick Sort, Heap Sort, and Radix Sort demonstrate consistent performance trends across varying dataset sizes, highlighting their reliability and suitability for diverse applications.
 
+4. **Parallel Appearance of Efficient Algorithms:**
+   - An interesting observation from the combined graph is that Merge Sort, Quick Sort, Heap Sort, and Radix Sort appear to parallelly follow the zero line, indicating their runtime are _significantly faster_ performance compared to Simple Sorting Algorithms. This phenomenon can be attributed to the $O(n log n)$ and $O(nk)$ time complexities of these algorithms, which result in more efficient and scalable runtime behaviors, especially for larger datasets.
 
+#### Practical Implications
 
+The combined graph analysis has several practical implications for algorithm selection and optimization in real-world scenarios:
+- Developers can leverage the insights gained from this analysis to make informed decisions regarding algorithm selection based on performance requirements and dataset characteristics.
+- Understanding the performance characteristics of different sorting algorithms can facilitate the optimization of sorting algorithms for specific use cases and datasets.
+- Benchmarking against alternative sorting algorithms or optimizations can further refine algorithm selection and implementation strategies.
 
-
-
+---
