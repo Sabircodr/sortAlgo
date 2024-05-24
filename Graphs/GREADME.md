@@ -228,8 +228,6 @@ The graph illustrates the runtime performance of _Merge Sort_, _Heap Sort_, _Qui
 
 # Combined Graph Analysis
 
-## Overview
-
 The combined graph presents a holistic view of the runtime performance of all sorting algorithms across different dataset sizes. By integrating the results of Simple Sorting Algorithms and Efficient Sorting Algorithms, we can discern overarching trends and draw insightful comparisons.
 
 ## The Complete Comparison Graph
